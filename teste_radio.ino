@@ -60,7 +60,7 @@ int triggerResponse(int ch1_arg){
   //Serial.println(ch1_mapped_value);
   if(ch1_arg>20){
     analogWrite(enA, ch1_mapped_value);
-    analogWrite(enA, ch1_mapped_value);   
+    analogWrite(enB, ch1_mapped_value);   
     digitalWrite(IN1, LOW); digitalWrite(IN2, HIGH);
     digitalWrite(IN3, LOW); digitalWrite(IN4, HIGH);
   }
