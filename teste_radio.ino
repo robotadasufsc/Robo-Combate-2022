@@ -3,7 +3,7 @@
 #define IN3 5 
 #define IN4 4
 #define enA 3
-#define enB 2
+#define enB 9
 
 int ch1_value;
 int ch2_value;
@@ -83,7 +83,7 @@ void wheelResponse(int ch2_arg, int currentIntensity){
   float minDireita = -420; //intensidade minima
   
   if(ch2_arg <= maxDireita){
-    int intensity = -map(ch2_arg, maxDireita, minDireita, currentIntensity, 0);
+    int intensity = map(ch2_arg, maxDireita, minDireita, currentIntensity, 0);
     if(intensity>=255) intensity =255; if(intensity<=0) intensity = 0;
     //Serial.print("ch2: ");
     //Serial.println(ch2_arg);
