@@ -51,13 +51,6 @@ void loop() {
   if(ch4Value!=0 && armaOff == 0) armaOff = ch4Value; //A arma sempre começa desligada, o estado do switch ch4 encontrado ao iniciar o código é considerado como o estado desligado
   if(ch3Value!=0 && reverseOff == 0) reverseOff = ch3Value;
   //esse if só retornará true uma única vez, na condição que armaOff não tenha sido definida ainda e que o controle esteja ligado
-  //Serial.print("ch1Value: ");Serial.println(ch1Value);
-  //Serial.print("ch2Value: ");Serial.println(ch2Value);
-  //Serial.print("ch3Value: ");Serial.println(ch3Value);
-  //Serial.print("ch4Value: ");Serial.println(ch4Value);
-  //int pct = map(Weapon,MIN_PULSE_LENGTH,MAX_PULSE_LENGTH, 0, 100);
-  
-  //Serial.print("Weapon: ");Serial.println(Weapon); //Serial.println("%");
    
   deadZone (ch1Value, ch2Value); // função ponto morto
 
